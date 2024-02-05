@@ -1,0 +1,466 @@
+{
+	"info": {
+		"_postman_id": "6e9e4560-d7dc-403f-9fdd-db1fa9debe6c",
+		"name": "Feedback Board",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22001307"
+	},
+	"item": [
+		{
+			"name": "Feedback",
+			"item": [
+				{
+					"name": "Create New Feedback",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"first feedback\",\n    \"category\":\"Feature\",\n    \"details\": \"this is the first feedback\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}api/v1/feedback",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"v1",
+								"feedback"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Feedback",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}api/v1/feedback",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"v1",
+								"feedback"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Feedback",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"first feedback\",\n    \"category\":\"UX\",\n    \"details\": \"this is the first feedback\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}api/v1/feedback/65bcb41f6c4ac97e91eed95d",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"v1",
+								"feedback",
+								"65bcb41f6c4ac97e91eed95d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Feedback",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}api/v1/feedback/65bcb41f6c4ac97e91eed95d",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"v1",
+								"feedback",
+								"65bcb41f6c4ac97e91eed95d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Feedback Details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}api/v1/feedback/65bcb41f6c4ac97e91eed95d",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"v1",
+								"feedback",
+								"65bcb41f6c4ac97e91eed95d"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Comments",
+			"item": [
+				{
+					"name": "Create Comments",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"comment\": \"my fist comment\",\n    \"feedback\": \"65bcb41f6c4ac97e91eed95d\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}api/v1/comments",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"v1",
+								"comments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Comments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}api/v1/comments",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"v1",
+								"comments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Comment Details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}api/v1/comments/65bcd2dd6129d58dd41d0bb8",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"v1",
+								"comments",
+								"65bcd2dd6129d58dd41d0bb8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Comment",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"comment\": \"my fist edit comment\",\n    \"feedback\": \"65bcb41f6c4ac97e91eed95d\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}api/v1/comments/65bcd44092c54912bbd60938",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"v1",
+								"comments",
+								"65bcd44092c54912bbd60938"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Comment",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}api/v1/comments/65bcd44092c54912bbd60938",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"v1",
+								"comments",
+								"65bcd44092c54912bbd60938"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Feedback/Comments",
+			"item": [
+				{
+					"name": "Create comments on feedback",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"comment\": \"my second comment\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}api/v1/feedback/65bcb41f6c4ac97e91eed95d/comments",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"v1",
+								"feedback",
+								"65bcb41f6c4ac97e91eed95d",
+								"comments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Comments on feedback",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}api/v1/feedback/65bcb41f6c4ac97e91eed95d/comments",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"v1",
+								"feedback",
+								"65bcb41f6c4ac97e91eed95d",
+								"comments"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Reply",
+			"item": [
+				{
+					"name": "Get All Reply",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}api/v1/replys",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"v1",
+								"replys"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Reply",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"reply\": \"This my first reply\",\n    \"comment\":\"65bcd2dd6129d58dd41d0bb8\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}api/v1/replys",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"v1",
+								"replys"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Reply",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"reply\": \"This my edit second reply\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}api/v1/replys/65bcec615ef0708ab93d9f7e",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"v1",
+								"replys",
+								"65bcec615ef0708ab93d9f7e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Reply",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}api/v1/replys/65bcec615ef0708ab93d9f7e",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"v1",
+								"replys",
+								"65bcec615ef0708ab93d9f7e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Reply Details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}api/v1/replys/65bce910c2292b9fc13a46f6",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"v1",
+								"replys",
+								"65bce910c2292b9fc13a46f6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Comment / Reply",
+			"item": [
+				{
+					"name": "Create reply on Comment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"reply\": \"This my second reply\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}api/v1/comments/65bcd2dd6129d58dd41d0bb8/replys",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"v1",
+								"comments",
+								"65bcd2dd6129d58dd41d0bb8",
+								"replys"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All reply On Comment",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}api/v1/comments/65bcd2dd6129d58dd41d0bb8/replys",
+							"host": [
+								"{{URL}}api"
+							],
+							"path": [
+								"v1",
+								"comments",
+								"65bcd2dd6129d58dd41d0bb8",
+								"replys"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
