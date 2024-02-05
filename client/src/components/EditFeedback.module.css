@@ -1,0 +1,136 @@
+.total{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(242, 244, 255);
+}
+
+.body{
+    background-color: rgb(255, 255, 255);
+    padding: 2%;
+    margin-top: 4%;
+    border-radius: 10px;
+    width: 60%;
+    
+}
+.body img{
+    position: relative;
+    top: -5rem;
+    width: 5rem;
+}
+.body form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+.formField{
+    display: flex;
+    flex-direction: column;
+    padding: 1% 0;
+}
+.formField label{
+    padding: 1% 0;
+}
+
+.titleInput{
+    height: 3rem;
+    border: none;
+    background-color: rgb(242, 244, 255);
+    padding-left: 1%;
+    border-radius: 10px;
+}
+.formField select {
+    height: 3rem;
+    border: none;
+    background-color: rgb(242, 244, 255);
+    padding-left: 1%;
+    border-radius: 10px;
+    color: black;
+    /* filter: drop-shadow(2px 4px 8px rgb(108, 106, 106)); */
+}
+
+.formField option {
+    background-color: white;
+    border:none;
+}
+.detail{
+    height: 6rem;
+    border: none;
+    background-color: rgb(242, 244, 255);
+    padding-left: 1%;
+    border-radius: 10px;
+    
+}
+
+.btn{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 2%;
+    margin-bottom: 2%;
+}
+.btn2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 30%;
+    
+}
+.btnDelete{
+    border: none;
+    background-color: rgb(237, 73, 73);
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: x-large;
+    color: white;
+}
+.btnDelete:hover{
+    background-color:  rgb(234, 107, 107);
+}
+.btnCancel{
+    border: none;
+    background-color: rgb(58, 67, 116);
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: x-large;
+    color: white;
+}
+.btnCancel:hover{
+    background-color: rgb(100, 113, 150)
+}
+.btnAdd{
+    border: none;
+    background-color:rgb(173, 31, 234);
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: x-large;
+    color: white;
+}
+.btnAdd:hover{
+    background-color: rgb(181, 73, 227)
+}
+
+.backBtn{
+    align-items: start;
+    text-align: start;
+    width: 60%;
+    padding-top: 1%;
+}
+.backBtn button {
+    background-color: transparent !important;
+    border: none ;
+    font-weight: bold ;
+    font-size: larger ;
+    color: rgba(31, 21, 116, 0.695);
+}
+
+
+.backBtn button:hover{
+    text-decoration: underline ;
+}
